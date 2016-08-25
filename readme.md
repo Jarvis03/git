@@ -19,3 +19,13 @@ Git
  [master (root-commit) cb926e7] wrote a readme file
  1 file changed, 2 insertions(+)
  create mode 100644 readme.txt
+ ##关联远程仓库
+ ###github创建仓库
+ 登录github，然后在右上角找到"Create a new repository"按钮，创建一个新的仓库。Repository name填入git_test，
+ 然后点击"Create repository"按钮就可以创建了新的git仓库。
+ ###远程仓库与本地仓库关联
+ $ git remote add origin git@github.com:YourGithubName/git_test.git
+ ###推送到远程库
+ $ git push -u origin master
+由于远程库是空的，第一次推送的master分支时加上了-u的参数，Git不但会把本地的master分支内容推送到远程新的master分支，
+还会把本地的master分支和远程的master分支关联起来，在以后的推送和拉取就可以简化命令。
