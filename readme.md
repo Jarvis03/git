@@ -43,9 +43,9 @@ Git
 ### 修改
 - `git status`: 查看状态
 - `git log `: 查看历史记录
-- `git reset`: 版本退回   Git 内部有一个指向当前版本的`HEAD`指针。`HEAD`指向那个版本号，
+- `git reset`: 版本退回   Git 内部有一个指向当前版本的**HEAD**指针。**HEAD**指向那个版本号，
   就把当前版本定位到那。所以用`$ git reset --head HEAD(指针)`来回退版本或者回复版本。
-- `git reflog`:`HEAD`版本号可以用命令`git reflog`查看。
+- `git reflog`: `HEAD`版本号可以用命令`git reflog`查看。
 
     $ git reflog
     ea34578 HEAD@{0}: reset: moving to HEAD^
@@ -53,7 +53,7 @@ Git
     ea34578 HEAD@{2}: commit: add distributed
     cb926e7 HEAD@{3}: commit (initial): wrote a readme file
     
-- `git diff HEAD -- file`:查看工作区与版本库里面最新版本的区别。如`git diff HEAD -- readme.txt`
+- `git diff HEAD -- file`: 查看工作区与版本库里面最新版本的区别。如`git diff HEAD -- readme.txt`
 
         $ git diff HEAD -- readme.txt 
         diff --git a/readme.txt b/readme.txt
@@ -67,5 +67,6 @@ Git
         -Git tracks changes.
         +Git tracks changes of files
         
-- `git checkout -- file`:文件在工作区的修改全部撤销  
-- `git rm`:版本库中删除文件  
+- `git checkout -- file`: 文件在工作区的修改全部撤销  
+- `git rm`: 版本库中删除文件  
+### 分支管理
