@@ -5,7 +5,6 @@ Git
 安装完成后还需要最后一步设置，在命令行输入：
     $ git config --global user.name  "You Name"
     $ git config --global user.email "You Email"
-
 ## 创建版本库
 在一个合适的目录执行以下命令：
     $ git init 
