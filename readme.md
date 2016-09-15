@@ -55,16 +55,17 @@ Git
     
 - `git diff HEAD -- file`:查看工作区与版本库里面最新版本的区别。如`git diff HEAD -- readme.txt`
 
-    $ git diff HEAD -- readme.txt 
-    diff --git a/readme.txt b/readme.txt
-    index 76d770f..a9c5755 100644
-    --- a/readme.txt
-    +++ b/readme.txt
-    @@ -1,4 +1,4 @@
-     Git is a distributed version control system.
-     Git is free software distributed under the GPL.
-     Git has a mutable index called stage.
-    -Git tracks changes.
-    +Git tracks changes of files
+        $ git diff HEAD -- readme.txt 
+        diff --git a/readme.txt b/readme.txt
+        index 76d770f..a9c5755 100644
+        --- a/readme.txt
+        +++ b/readme.txt
+        @@ -1,4 +1,4 @@
+         Git is a distributed version control system.
+         Git is free software distributed under the GPL.
+         Git has a mutable index called stage.
+        -Git tracks changes.
+        +Git tracks changes of files
+        
 - `git checkout -- file`:文件在工作区的修改全部撤销  
 - `git rm`:版本库中删除文件  
