@@ -21,7 +21,7 @@ Git
     create mode 100644 readme.txt
 ##关联远程仓库
 ###github创建仓库
- 登录github，然后在右上角找到`"Create a new repository"`按钮，创建一个新的仓库。`Repository name`填入`git_test`，
+ 登录**github**，然后在右上角找到`"Create a new repository"`按钮，创建一个新的仓库。`Repository name`填入`git_test`，
  然后点击`"Create repository"`按钮就可以创建了新的git仓库。
 ###远程仓库与本地仓库关联
     $ git remote add origin git@github.com:YourGithubName/git_test.git
