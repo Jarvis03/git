@@ -4,8 +4,8 @@ Git
 ## Windows install
 安装完成后还需要最后一步设置，在命令行输入：
 
-    $ git config --global user.name  "You Name"
-    $ git config --global user.email "You Email"
+    $ git config --global user.name  "Your Name"
+    $ git config --global user.email "Your Email"
 
 ## 创建版本库
 在一个合适的目录执行以下命令：
@@ -37,3 +37,34 @@ Git
     $ git push -u origin master
 由于远程库是空的，第一次推送的master分支时加上了**-u**的参数，Git不但会把本地的master分支内容推送到远程新的master分支，
 还会把本地的master分支和远程的master分支关联起来，在以后的推送和拉取就可以简化命令。
+
+## Git Command
+除了以上提到的git命令外，介绍下其他常用命令
+### 修改
+- `git status`: 查看状态
+- `git log `: 查看历史记录
+- `git reset`: 版本退回   Git 内部有一个指向当前版本的`HEAD`指针。`HEAD`指向那个版本号，
+  就把当前版本定位到那。所以用`$ git reset --head HEAD(指针)`来回退版本或者回复版本。
+- `git reflog`:`HEAD`版本号可以用命令`git reflog`查看。
+
+    $ git reflog
+    ea34578 HEAD@{0}: reset: moving to HEAD^
+    3628164 HEAD@{1}: commit: append GPL
+    ea34578 HEAD@{2}: commit: add distributed
+    cb926e7 HEAD@{3}: commit (initial): wrote a readme file
+    
+- `git diff HEAD -- file`:查看工作区与版本库里面最新版本的区别。如`git diff HEAD -- readme.txt`
+
+    $ git diff HEAD -- readme.txt 
+    diff --git a/readme.txt b/readme.txt
+    index 76d770f..a9c5755 100644
+    --- a/readme.txt
+    +++ b/readme.txt
+    @@ -1,4 +1,4 @@
+     Git is a distributed version control system.
+     Git is free software distributed under the GPL.
+     Git has a mutable index called stage.
+    -Git tracks changes.
+    +Git tracks changes of files
+- `git checkout -- file`:文件在工作区的修改全部撤销  
+- `git rm`:版本库中删除文件  
