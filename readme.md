@@ -68,5 +68,6 @@ Git
         +Git tracks changes of files
         
 - `git checkout -- file`: 文件在工作区的修改全部撤销  
-- `git rm`: 版本库中删除文件  
+- `git rm`: 版本库中删除文件 
+ 
 ### 分支管理
