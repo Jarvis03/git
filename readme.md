@@ -48,23 +48,30 @@ Git
 
 # 1. 先有远程库
 创建远程库，详细内容参看： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000)
+
 在Github创建仓库后，下一步就需要 `clone` 克隆一个本地库：
+
 `$ git clone git@github.com:YourGithubName/git_test.git`
 
 
 ## 关联远程库 ssh秘钥问题
-你也许还注意到，GitHub给出的地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
+你也许还注意到，GitHub给出的地址不止一个，还可以用https://github.com/michaelliao/gitskills.git 这样的地址。实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
 
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
 #### 使用ssh协议
 1. git命令创建SSH Key
 方法参见： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
+
 2. TortoiseGit 创建Key
 使用puttygen可以生成TortoiseGit使用的秘钥（**.ppk）,如果已经使用git生成了ssh的key，这一步需要加载 ssh的私钥，最后点击保存私钥即可。
-！[创建key](https://github.com/Jarvis03/git/blob/master/file/key2.png)
+
+
+![创建key](https://github.com/Jarvis03/git/blob/master/file/key2.png)
 
 使用已经保存的私钥，可以免去每次操作输入密码的问题
-！[使用key](https://github.com/Jarvis03/git/blob/master/file/key.png)
+
+![使用key](https://github.com/Jarvis03/git/blob/master/file/key.png)
+
 在windows程序中，找到TortoiseGit下的Puttygen并打开，
 
 ## Git Command
