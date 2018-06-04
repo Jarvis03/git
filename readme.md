@@ -47,7 +47,7 @@ Git
 还会把本地的master分支和远程的master分支关联起来，在以后的推送和拉取就可以简化命令。
 
 ## 2. 先有远程库
-创建远程库，详细内容参看： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000)
+创建远程库，详细内容参看： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375233990231ac8cf32ef1b24887a5209f83e01cb94b000)
 
 在Github创建仓库后，下一步就需要 `clone` 克隆一个本地库：
 
@@ -60,7 +60,7 @@ Git
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
 #### 使用ssh协议
 1. git命令创建SSH Key
-方法参见： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
+方法参见： [廖雪峰Git教程-远程库](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
 
 2. TortoiseGit 创建Key
 
@@ -75,8 +75,10 @@ Git
 ![使用key](https://github.com/Jarvis03/git/blob/master/file/key.png)
 
 在gitLab（或者github）添加公钥，这是远程仓库认证客户端的一个凭证
+参见： [廖雪峰Git教程-远程库](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
 
 ![使用key](https://github.com/Jarvis03/git/blob/master/file/gitlab.png)
+
 
 ## Git Command
 除了以上提到的git命令外，介绍下其他常用命令
