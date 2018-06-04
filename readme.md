@@ -35,7 +35,7 @@ Git
     $ git remote add origin git@github.com:YourGithubName/git_test.git
 ### 推送到远程库
     $ git push -u origin master
-由于远程库是空的，第一次推送的master分支时加上了**-u**的参数，Git不但会把本地的master分支内容推送到远程新的master分支，
+由于远程库是空的，第一次推送的master分支时加上了 -u 的参数，Git不但会把本地的master分支内容推送到远程新的master分支，
 还会把本地的master分支和远程的master分支关联起来，在以后的推送和拉取就可以简化命令。
 
 ## Git Command
