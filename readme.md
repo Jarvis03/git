@@ -60,9 +60,11 @@ Git
 1. git命令创建SSH Key
 方法参见： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
 2. TortoiseGit 创建Key
+使用puttygen可以生成TortoiseGit使用的秘钥（**.ppk）,如果已经使用git生成了ssh的key，这一步需要加载 ssh的私钥，最后点击保存私钥即可。
+！[创建key](https://github.com/Jarvis03/git/blob/master/file/key2.png)
 
-！[](/file/key.png)
-
+使用已经保存的私钥，可以免去每次操作输入密码的问题
+！[使用key](https://github.com/Jarvis03/git/blob/master/file/key.png)
 在windows程序中，找到TortoiseGit下的Puttygen并打开，
 
 ## Git Command
