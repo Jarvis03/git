@@ -2,10 +2,17 @@
 Git
 ===
 ## Windows install
+
+网上自行搜索安装git客户端
+
 安装完成后还需要最后一步设置，在命令行输入：
 
     $ git config --global user.name  "Your Name"
     $ git config --global user.email "Your Email"
+
+
+# 1. 先有本地仓库,后有远程库
+详细内容参看： [廖雪峰Git教程-添加远程库](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000)
 
 ## 创建版本库
 在一个合适的目录执行以下命令：
@@ -28,6 +35,7 @@ Git
     create mode 100644 readme.txt
 
 ## 关联远程仓库
+
 ### github创建仓库
  登录**github**，然后在右上角找到`"Create a new repository"`按钮，创建一个新的仓库。`Repository name`填入`git_test`，
  然后点击`"Create repository"`按钮就可以创建了新的git仓库。
@@ -37,6 +45,22 @@ Git
     $ git push -u origin master
 由于远程库是空的，第一次推送的master分支时加上了 -u 的参数，Git不但会把本地的master分支内容推送到远程新的master分支，
 还会把本地的master分支和远程的master分支关联起来，在以后的推送和拉取就可以简化命令。
+
+# 1. 先有远程库
+创建远程库，详细内容参看： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013752340242354807e192f02a44359908df8a5643103a000)
+在Github创建仓库后，下一步就需要 `clone` 克隆一个本地库：
+`$ git clone git@github.com:YourGithubName/git_test.git`
+
+
+## 关联远程库 ssh秘钥问题
+你也许还注意到，GitHub给出的地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git支持多种协议，默认的git://使用ssh，但也可以使用https等其他协议。
+
+使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用ssh协议而只能用https。
+#### 使用ssh协议
+1. git命令创建SSH Key
+方法参见： [廖雪峰Git教程-从远程库克隆](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
+2. TortoiseGit 创建Key
+在windows程序中，找到TortoiseGit下的Puttygen并打开，
 
 ## Git Command
 除了以上提到的git命令外，介绍下其他常用命令
