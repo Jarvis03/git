@@ -74,6 +74,9 @@ Git
 
 ![使用key](https://github.com/Jarvis03/git/blob/master/file/key.png)
 
+在gitLab（或者github）添加公钥，这是远程仓库认证客户端的一个凭证
+
+![使用key](https://github.com/Jarvis03/git/blob/master/file/gitlab.png)
 
 ## Git Command
 除了以上提到的git命令外，介绍下其他常用命令
