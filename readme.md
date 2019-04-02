@@ -91,11 +91,11 @@ Git
   就把当前版本定位到那。所以用`$ git reset --head HEAD(指针)`来回退版本或者回复版本。
 - `git reflog`: `HEAD`版本号可以用命令`git reflog`查看。
 
-    $ git reflog
-    ea34578 HEAD@{0}: reset: moving to HEAD^
-    3628164 HEAD@{1}: commit: append GPL
-    ea34578 HEAD@{2}: commit: add distributed
-    cb926e7 HEAD@{3}: commit (initial): wrote a readme file
+      $ git reflog
+      ea34578 HEAD@{0}: reset: moving to HEAD^
+      3628164 HEAD@{1}: commit: append GPL
+      ea34578 HEAD@{2}: commit: add distributed
+      cb926e7 HEAD@{3}: commit (initial): wrote a readme file
     
 - `git diff HEAD -- file`: 查看工作区与版本库里面最新版本的区别。如`git diff HEAD -- readme.txt`
 
