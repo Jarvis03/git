@@ -62,6 +62,8 @@ Git
 1. git命令创建SSH Key
 方法参见： [廖雪峰Git教程-远程库](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
 
+`$ ssh-keygen -t rsa -C "youremail@example.com"`
+
 2. TortoiseGit 创建Key
 
 在windows程序中，找到TortoiseGit下的Puttygen并打开
